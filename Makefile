@@ -1,3 +1,3 @@
-out/ipaddr: src/ipaddr.nim
-	nim --define:release --opt:size --out:$(abspath $@) compile $<
-	@strip $(abspath $@)
+out/ipaddr: src/main.c
+	gcc -std=c99 $< -o $@
+	strip $@
