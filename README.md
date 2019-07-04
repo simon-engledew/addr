@@ -1,1 +1,1 @@
-usage: `ipaddr <interface...>`
+usage: `addr <interface...>`
